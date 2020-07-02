@@ -1,0 +1,12 @@
+
+<div class="my-container">
+    <div>Press enter after you typed</div>
+    <br />
+    <div class="tag-container">
+        <div *ngFor="let tag of tags" class="tag">
+            <span>{{tag}}</span>
+            <fa-icon [icon]="faTimes" (click)="remove(tag)" class="tag-icon"></fa-icon>
+        </div>
+        <input #box (keyup.enter)="onEnter(box.value); box.value=''"/>
+    </div>
+</div>

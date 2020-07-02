@@ -1,0 +1,32 @@
+<app-tags-input></app-tags-input>
+<br />
+<br />
+<div>
+    <button class="cb" (click)="cbClick($event)">Callback Login</button>
+    <div class="msg">msg: {{ bsMsg }}</div>
+</div>
+
+<br />
+<div>
+    <button class="cb" (click)="promiseClick($event)">Promise Login</button>
+    <div class="msg">msg: {{ promiseMsg }}</div>
+</div>
+
+
+<br />
+<div>
+    <button class="cb" (click)="asyncClick($event)">Async Login</button>
+    <div class="msg">msg: {{ asyncMsg }}</div>
+</div>
+
+
+<br />
+<div>
+    <button #obsButton class="cb" >Observable Login</button>
+    <div class="msg">msg: {{ obsMsg }}</div>
+</div>
+
+<br />
+<input type='text' #input1>
+<input type='text' #input2>
+<p>Combined value:<span #span>{{ combine }}</span></p>
