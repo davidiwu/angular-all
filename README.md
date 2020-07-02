@@ -1,4 +1,4 @@
-# AngularAll
+# Angular All
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
 
@@ -18,10 +18,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 you can find demos for:
 
-⋅⋅* how to use font-awesome in angular
-⋅⋅* how to use angular material
-⋅⋅* how to create an input component that supprt tags
-⋅⋅* difference in promise/async/observable
-⋅⋅* create a filter with auto-completion
-⋅⋅* how to use form control
-⋅⋅* more to be added...
+* how to use font-awesome in angular
+* how to use angular material
+* how to create an input component that supprt tags
+* difference in promise/async/observable
+* create a filter with auto-completion
+* how to use form control
+* more to be added...
