@@ -24,4 +24,5 @@ you can find demos for:
 * difference in promise/async/observable
 * create a filter with auto-completion
 * how to use form control
+* how to use material icons
 * more to be added...
