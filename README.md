@@ -26,3 +26,6 @@ you can find demos for:
 * how to use form control
 * how to use material icons
 * more to be added...
+* update to angular 10:
+  ng update @angular/core @angular/cli
+  ng update @angular/material
