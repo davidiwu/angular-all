@@ -33,3 +33,20 @@ you can find demos for:
   ng update @angular/material
 
   to update other npm packages: npm update
+
+* add server side rendering:(useful for SEO and social media site preview), the static homepage will be rendered in sever side and be placed in the <app-root></app-root> tag inside the index.html file. and soon will be replaced by the client app once the bundle has been loaded in the brownser.
+
+  ng add @nguniversal/express-engine --clientProject angular-all
+  then run command in the terminal for production:
+  >> ng build --prod
+  >> ng run angular-all:server:production
+  or >> npm run build:ssr for both commands
+  >> npm run serve:ssr
+  then go to browser at http://localhost:4000
+
+  for testing run:
+  >> npm run dev:ssr
+  then open browser on http://localhost:4200, check the network requst for localhost, it return the full html page.
+
+
+  The transition from the server-rendered app to the client app happens quickly on a development machine, but you should always test your apps in real-world scenarios.
