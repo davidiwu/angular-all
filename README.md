@@ -39,14 +39,23 @@ you can find demos for:
   ng add @nguniversal/express-engine --clientProject angular-all
   then run command in the terminal for production:
   >> ng build --prod
+
   >> ng run angular-all:server:production
+
   or >> npm run build:ssr for both commands
+
   >> npm run serve:ssr
+
   then go to browser at http://localhost:4000
 
   for testing run:
   >> npm run dev:ssr
+  
   then open browser on http://localhost:4200, check the network requst for localhost, it return the full html page.
 
 
   The transition from the server-rendered app to the client app happens quickly on a development machine, but you should always test your apps in real-world scenarios.
+
+* add lazy-loading feature modules:
+
+   >> ng generate module customers --route customers --module app.module
