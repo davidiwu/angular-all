@@ -25,7 +25,6 @@ you can find demos for:
 * create a filter with auto-completion
 * how to use form control
 * how to use material icons
-* more to be added...
 * update to angular 10:
 
   ng update @angular/core @angular/cli
@@ -38,18 +37,18 @@ you can find demos for:
 
   ng add @nguniversal/express-engine --clientProject angular-all
   then run command in the terminal for production:
-  >> ng build --prod
+  > ng build --prod
 
-  >> ng run angular-all:server:production
+  > ng run angular-all:server:production
 
   or >> npm run build:ssr for both commands
 
-  >> npm run serve:ssr
+  > npm run serve:ssr
 
   then go to browser at http://localhost:4000
 
   for testing run:
-  >> npm run dev:ssr
+  > npm run dev:ssr
   
   then open browser on http://localhost:4200, check the network requst for localhost, it return the full html page.
 
@@ -58,4 +57,8 @@ you can find demos for:
 
 * add lazy-loading feature modules:
 
-   >> ng generate module customers --route customers --module app.module
+   > ng generate module customers --route customers --module app.module
+
+* table with rows expandable
+
+* more to be added...
