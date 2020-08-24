@@ -4,8 +4,9 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
-import {MatAutocompleteModule} from '@angular/material/autocomplete';
-import {MatIconModule} from '@angular/material/icon';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
 
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -25,6 +26,7 @@ import { FilterComponent } from './filter/filter.component';
 import { AsyncComponent } from './async/async.component';
 import { TagsInputComponent } from './tags-input/tags-input.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ExpandableTableComponent } from './expandable-table/expandable-table.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FormEditorComponent,
     FilterComponent,
     AsyncComponent,
-    TagsInputComponent
+    TagsInputComponent,
+    ExpandableTableComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -53,7 +56,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ReactiveFormsModule,
     AppRoutingModule,
     FontAwesomeModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

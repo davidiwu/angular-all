@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { Observable, fromEvent } from 'rxjs';
 import { switchMap, mergeMap, map } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-async',
@@ -31,7 +32,9 @@ export class AsyncComponent implements OnInit, AfterViewInit {
     }, 2000)
   }
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+
+   }
 
 
 

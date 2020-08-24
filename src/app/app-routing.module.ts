@@ -6,6 +6,7 @@ import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { AsyncComponent } from './async/async.component';
 import { MaterialComponent } from './material/material.component';
+import { ExpandableTableComponent } from './expandable-table/expandable-table.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path:'shipping', component:ShippingComponent},
   {path:'async', component:AsyncComponent},
   {path:'mat', component:MaterialComponent},
+  {path:'table', component:ExpandableTableComponent},
   {
     path: 'customers',
     loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule)
