@@ -61,4 +61,6 @@ you can find demos for:
 
 * table with rows expandable
 
+* custom attribute and structure directives
+
 * more to be added...

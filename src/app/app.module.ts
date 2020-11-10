@@ -28,6 +28,9 @@ import { TagsInputComponent } from './tags-input/tags-input.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ExpandableTableComponent } from './expandable-table/expandable-table.component';
 
+import { MyErrorDirective } from './directives/attr-error';
+import { MyCustomIfDirective } from './directives/structure-if';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +45,9 @@ import { ExpandableTableComponent } from './expandable-table/expandable-table.co
     FilterComponent,
     AsyncComponent,
     TagsInputComponent,
-    ExpandableTableComponent
+    ExpandableTableComponent,
+    MyErrorDirective,
+    MyCustomIfDirective
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
